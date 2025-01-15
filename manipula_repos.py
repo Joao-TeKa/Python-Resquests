@@ -29,6 +29,7 @@ class ManipulaRepositorios:
             file_content = file.read()
         encoded_content = base64.b64encode(file_content)
 
+        
         # Realizando o upload
         url = f"{self.api_base_url}/repos/{self.username}/{nome_repo}/contents/{nome_arquivo}"
         data = {
